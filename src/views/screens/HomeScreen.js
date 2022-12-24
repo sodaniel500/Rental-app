@@ -7,9 +7,7 @@ import { FlatList } from 'react-native-gesture-handler';
 const { width } = Dimensions.get('screen');
 const HomeScreen = ({navigation}) => {
     const ListCategories = () => {
-        const [selectedCategoryIndex, setSelectCategoryIndex] = React.useState(
-            0,
-        )
+        const [selectedCategoryIndex, setSelectCategoryIndex] = React.useState(0)
         const categoryList = ['Popular', 'Recommended', 'Nearest'];
         return (
             <View style={style.catergoryListContainer}>
@@ -100,7 +98,7 @@ const HomeScreen = ({navigation}) => {
                     <Text style={{ color: COLORS.dark, fontSize: 20, fontWeight: 'bold' }}>Canada</Text>
                 </View>
                 <Image
-                    source={require('../../assets/person.png')}
+                    source={require('../../assets/4.jpg')}
                     style={style.profileImage}
                 />
             </View>

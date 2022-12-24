@@ -67,20 +67,20 @@ const DetailsScreen = ({ navigation, route }) => {
                         {house.details}
                     </Text>
                     <FlatList
-                    keyExtractor={(_, key) => key.toString()}
-                    contentContainerStyle={{marginTop: 20}}
-                     horizontal
+                        keyExtractor={(_, key) => key.toString()}
+                        contentContainerStyle={{ marginTop: 20 }}
+                        horizontal
                         showsHorizontalScrollIndicator={false}
                         data={house.interiors}
                         renderItem={({ item }) => <InteriorImage image={item} />}
                     />
                     <View style={style.footer}>
                         <View>
-                            <Text style={{color: COLORS.blue, fontWeight: 'bold', fontSize: 18}}>$1,500</Text>
-                            <Text style={{color: COLORS.grey, fontWeight: 'bold', fontSize: 12}}>Total Price</Text>
+                            <Text style={{ color: COLORS.blue, fontWeight: 'bold', fontSize: 18 }}>$1,500</Text>
+                            <Text style={{ color: COLORS.grey, fontWeight: 'bold', fontSize: 12 }}>Total Price</Text>
                         </View>
                         <View style={style.bookNowBtn}>
-                            <Text style={{color: COLORS.white}}>Book Now</Text>
+                            <Text style={{ color: COLORS.white }}>Book Now</Text>
                         </View>
                     </View>
                 </View>
@@ -155,23 +155,23 @@ const style = StyleSheet.create({
         borderRadius: 10
 
     },
-    footer:{
+    footer: {
         height: 70,
         backgroundColor: COLORS.light,
         borderRadius: 10,
-        paddingHorizontal:  20,
+        paddingHorizontal: 20,
         marginVertical: 10,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between'
     },
-    bookNowBtn:{
+    bookNowBtn: {
         height: 50,
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: COLORS.dark,
         borderRadius: 10,
-        paddingHorizontal: 20  
+        paddingHorizontal: 20
     }
 });
 
